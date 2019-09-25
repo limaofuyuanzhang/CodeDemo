@@ -10,8 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LMStringDemoViewController : UIViewController
+typedef void(^DidSelectBlock)(NSIndexPath *indexPath);
 
+@interface LMDemoViewController : UIViewController
+@property (nonatomic, copy) NSArray *dataArray;
+@property (nonatomic, copy) DidSelectBlock didSelectBlock;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,20 +7,17 @@
 //
 
 #import "LMStringDemoViewController.h"
-#import "NSStringDemo.h"
 #import <Masonry.h>
 
-@interface LMStringDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface LMDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, copy) NSArray *titleArray;
+
 @end
 
-@implementation LMStringDemoViewController
+@implementation LMDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titleArray = @[@"计算单行字符串宽高",@"计算多行字符串宽高",@"NSMutableAttributedString的基本使用",@"NSAttributedString设置行间距、段间距"];
-    self.title = @"StringDemo";
     self.edgesForExtendedLayout = UIRectEdgeNone;
     UITableView *tableView = [[UITableView alloc] init];
     tableView.delegate = self;
@@ -43,43 +40,30 @@
 
 # pragma mark - tableview
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.dataArray.count;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSDictionary *dic = self.dataArray[section];
+    return dic[@"title3"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.titleArray.count;
+    NSDictionary *dic = self.dataArray[section];
+    NSArray *data3 = dic[@"data3"];
+    return data3.count;
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    cell.textLabel.text = self.titleArray[indexPath.row];
+    cell.textLabel.text = self.dataArray[indexPath.section][@"data3"][indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0:{
-            [NSStringDemo calcOneLineSize];
-        }
-            break;
-            
-        case 1:{
-            [NSStringDemo calcMutiLineSize];
-        }
-            break;
-            
-        case 2:{
-            [NSStringDemo attributedStringDemo];
-        }
-            break;
-            
-        case 3:{
-            [NSStringDemo attributedStringDemo1];
-        }
-            break;
-            
-        default:
-            break;
+    if (self.didSelectBlock) {
+        self.didSelectBlock(indexPath);
     }
 }
 

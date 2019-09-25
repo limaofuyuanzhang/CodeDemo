@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		AB03DDAC233907FF00FBDE49 /* UITextViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB03DDAB233907FF00FBDE49 /* UITextViewDemo.m */; };
 		AB2A25452339F53F003917CA /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = AB2A25442339F53F003917CA /* podfile */; };
-		AB2A2548233A0161003917CA /* LMStringDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A2547233A0161003917CA /* LMStringDemoViewController.m */; };
+		AB2A2548233A0161003917CA /* LMDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A2547233A0161003917CA /* LMDemoViewController.m */; };
 		AB2A254B233A0A33003917CA /* UIWindow+ShareTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A2549233A0A33003917CA /* UIWindow+ShareTestView.m */; };
-		AB2A2550233A14E8003917CA /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB2A254F233A14E8003917CA /* data.plist */; };
-		AB2A2552233A1833003917CA /* menu in Resources */ = {isa = PBXBuildFile; fileRef = AB2A2551233A1833003917CA /* menu */; };
+		AB2A2552233A1833003917CA /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = AB2A2551233A1833003917CA /* menu.json */; };
+		AB4C1263233B041E00F8A345 /* LMMenuProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4C1262233B041E00F8A345 /* LMMenuProvider.m */; };
+		AB4C1266233B058F00F8A345 /* PrintBeautifulLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4C1264233B058F00F8A345 /* PrintBeautifulLog.m */; };
+		AB4C1269233B0AD200F8A345 /* LMDemoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4C1268233B0AD200F8A345 /* LMDemoProvider.m */; };
 		AB5B95F12329475600E4E12F /* NSUserDefaultsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5B95F02329475600E4E12F /* NSUserDefaultsDemo.m */; };
 		ABD2BEAC232699260004F4F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD2BEAB232699260004F4F0 /* AppDelegate.m */; };
 		ABD2BEAF232699260004F4F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD2BEAE232699260004F4F0 /* ViewController.m */; };
@@ -29,13 +31,18 @@
 		AB03DDAA233907FF00FBDE49 /* UITextViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewDemo.h; sourceTree = "<group>"; };
 		AB03DDAB233907FF00FBDE49 /* UITextViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewDemo.m; sourceTree = "<group>"; };
 		AB2A25442339F53F003917CA /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
-		AB2A2546233A0161003917CA /* LMStringDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMStringDemoViewController.h; sourceTree = "<group>"; };
-		AB2A2547233A0161003917CA /* LMStringDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMStringDemoViewController.m; sourceTree = "<group>"; };
+		AB2A2546233A0161003917CA /* LMDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMDemoViewController.h; sourceTree = "<group>"; };
+		AB2A2547233A0161003917CA /* LMDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMDemoViewController.m; sourceTree = "<group>"; };
 		AB2A2549233A0A33003917CA /* UIWindow+ShareTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ShareTestView.m"; sourceTree = "<group>"; };
 		AB2A254A233A0A33003917CA /* UIWindow+ShareTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ShareTestView.h"; sourceTree = "<group>"; };
 		AB2A254C233A0B4E003917CA /* CodeDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeDemo-Prefix.pch"; sourceTree = "<group>"; };
-		AB2A254F233A14E8003917CA /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
-		AB2A2551233A1833003917CA /* menu */ = {isa = PBXFileReference; lastKnownFileType = text; path = menu; sourceTree = "<group>"; };
+		AB2A2551233A1833003917CA /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		AB4C1261233B041E00F8A345 /* LMMenuProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMenuProvider.h; sourceTree = "<group>"; };
+		AB4C1262233B041E00F8A345 /* LMMenuProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMenuProvider.m; sourceTree = "<group>"; };
+		AB4C1264233B058F00F8A345 /* PrintBeautifulLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintBeautifulLog.m; sourceTree = "<group>"; };
+		AB4C1265233B058F00F8A345 /* PrintBeautifulLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintBeautifulLog.h; sourceTree = "<group>"; };
+		AB4C1267233B0AD200F8A345 /* LMDemoProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMDemoProvider.h; sourceTree = "<group>"; };
+		AB4C1268233B0AD200F8A345 /* LMDemoProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMDemoProvider.m; sourceTree = "<group>"; };
 		AB5B95EF2329475600E4E12F /* NSUserDefaultsDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsDemo.h; sourceTree = "<group>"; };
 		AB5B95F02329475600E4E12F /* NSUserDefaultsDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsDemo.m; sourceTree = "<group>"; };
 		ABD2BEA7232699260004F4F0 /* CodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +94,8 @@
 			children = (
 				AB2A254A233A0A33003917CA /* UIWindow+ShareTestView.h */,
 				AB2A2549233A0A33003917CA /* UIWindow+ShareTestView.m */,
+				AB4C1265233B058F00F8A345 /* PrintBeautifulLog.h */,
+				AB4C1264233B058F00F8A345 /* PrintBeautifulLog.m */,
 			);
 			path = LMKit;
 			sourceTree = "<group>";
@@ -94,26 +103,35 @@
 		AB2A254D233A13CF003917CA /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				ABD2BEC0232699750004F4F0 /* String */,
-				AB2A254E233A13E9003917CA /* UserDefaults */,
+				ABD2BEC1232699910004F4F0 /* NSStringDemo.h */,
+				ABD2BEC2232699910004F4F0 /* NSStringDemo.m */,
+				AB5B95EF2329475600E4E12F /* NSUserDefaultsDemo.h */,
+				AB5B95F02329475600E4E12F /* NSUserDefaultsDemo.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		AB2A254E233A13E9003917CA /* UserDefaults */ = {
+		AB4C126A233B175200F8A345 /* DemoFile */ = {
 			isa = PBXGroup;
 			children = (
-				AB5B95EF2329475600E4E12F /* NSUserDefaultsDemo.h */,
-				AB5B95F02329475600E4E12F /* NSUserDefaultsDemo.m */,
+				AB4C1261233B041E00F8A345 /* LMMenuProvider.h */,
+				AB4C1262233B041E00F8A345 /* LMMenuProvider.m */,
+				AB4C1267233B0AD200F8A345 /* LMDemoProvider.h */,
+				AB4C1268233B0AD200F8A345 /* LMDemoProvider.m */,
+				AB2A2546233A0161003917CA /* LMDemoViewController.h */,
+				AB2A2547233A0161003917CA /* LMDemoViewController.m */,
+				ABD2BEAA232699260004F4F0 /* AppDelegate.h */,
+				ABD2BEAB232699260004F4F0 /* AppDelegate.m */,
+				ABD2BEAD232699260004F4F0 /* ViewController.h */,
+				ABD2BEAE232699260004F4F0 /* ViewController.m */,
 			);
-			path = UserDefaults;
+			path = DemoFile;
 			sourceTree = "<group>";
 		};
 		ABD2BE9E232699260004F4F0 = {
 			isa = PBXGroup;
 			children = (
-				AB2A2551233A1833003917CA /* menu */,
-				AB2A254F233A14E8003917CA /* data.plist */,
+				AB2A2551233A1833003917CA /* menu.json */,
 				AB2A25442339F53F003917CA /* podfile */,
 				AB2A254C233A0B4E003917CA /* CodeDemo-Prefix.pch */,
 				ABD2BEA9232699260004F4F0 /* CodeDemo */,
@@ -134,30 +152,16 @@
 		ABD2BEA9232699260004F4F0 /* CodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AB4C126A233B175200F8A345 /* DemoFile */,
 				AB03DDAD23390BDF00FBDE49 /* LMKit */,
 				AB2A254D233A13CF003917CA /* Base */,
 				AB03DDA9233907E900FBDE49 /* UI */,
-				ABD2BEAA232699260004F4F0 /* AppDelegate.h */,
-				ABD2BEAB232699260004F4F0 /* AppDelegate.m */,
-				ABD2BEAD232699260004F4F0 /* ViewController.h */,
-				ABD2BEAE232699260004F4F0 /* ViewController.m */,
 				ABD2BEB3232699270004F4F0 /* Assets.xcassets */,
 				ABD2BEB5232699270004F4F0 /* LaunchScreen.storyboard */,
 				ABD2BEB8232699270004F4F0 /* Info.plist */,
 				ABD2BEB9232699270004F4F0 /* main.m */,
 			);
 			path = CodeDemo;
-			sourceTree = "<group>";
-		};
-		ABD2BEC0232699750004F4F0 /* String */ = {
-			isa = PBXGroup;
-			children = (
-				ABD2BEC1232699910004F4F0 /* NSStringDemo.h */,
-				ABD2BEC2232699910004F4F0 /* NSStringDemo.m */,
-				AB2A2546233A0161003917CA /* LMStringDemoViewController.h */,
-				AB2A2547233A0161003917CA /* LMStringDemoViewController.m */,
-			);
-			path = String;
 			sourceTree = "<group>";
 		};
 		B7163D71CA91299659BFCD4F /* Frameworks */ = {
@@ -227,9 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABD2BEB7232699270004F4F0 /* LaunchScreen.storyboard in Resources */,
-				AB2A2552233A1833003917CA /* menu in Resources */,
+				AB2A2552233A1833003917CA /* menu.json in Resources */,
 				ABD2BEB4232699270004F4F0 /* Assets.xcassets in Resources */,
-				AB2A2550233A14E8003917CA /* data.plist in Resources */,
 				AB2A25452339F53F003917CA /* podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +275,11 @@
 				AB03DDAC233907FF00FBDE49 /* UITextViewDemo.m in Sources */,
 				ABD2BEBA232699270004F4F0 /* main.m in Sources */,
 				ABD2BEC3232699910004F4F0 /* NSStringDemo.m in Sources */,
-				AB2A2548233A0161003917CA /* LMStringDemoViewController.m in Sources */,
+				AB2A2548233A0161003917CA /* LMDemoViewController.m in Sources */,
+				AB4C1269233B0AD200F8A345 /* LMDemoProvider.m in Sources */,
 				ABD2BEAC232699260004F4F0 /* AppDelegate.m in Sources */,
+				AB4C1266233B058F00F8A345 /* PrintBeautifulLog.m in Sources */,
+				AB4C1263233B041E00F8A345 /* LMMenuProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

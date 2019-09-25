@@ -1,0 +1,5 @@
+target 'CodeDemo' do
+pod 'Masonry'
+pod 'Toast'
+pod 'MBProgressHUD'
+end

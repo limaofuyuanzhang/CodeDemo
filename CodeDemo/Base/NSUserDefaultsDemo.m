@@ -14,6 +14,7 @@
     NSUserDefaults *store = [NSUserDefaults standardUserDefaults];
     NSUInteger selectedIndex = 1;
     [store setInteger:selectedIndex forKey:@"selectedIndex"];
+    NSLog(@"保存成功");
 }
 
 + (void) NSUserDefaultReadDemo {

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIWindow (ShareTestView)
 - (void)lm_showShareViewWithImage:(UIImage *)image;
 - (void)lm_showShareViewWithView:(UIView *)view;
-+ (void)lm_showShareViewWithView:(UIView *)view;
++ (void)lm_showView:(UIView *)view;
 @end
 
 NS_ASSUME_NONNULL_END

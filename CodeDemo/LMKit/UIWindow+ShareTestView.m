@@ -76,7 +76,7 @@
     [self addSubview:shareView];
 }
 
-+ (void)lm_showShareViewWithView:(UIView *)view
++ (void)lm_showView:(UIView *)view
 {
     ShareTestView *shareView = [[ShareTestView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, view.frame.size.height);

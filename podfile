@@ -2,4 +2,6 @@ target 'CodeDemo' do
 pod 'Masonry'
 pod 'Toast'
 pod 'MBProgressHUD'
+pod 'YYKit'
+pod 'MJExtension'
 end

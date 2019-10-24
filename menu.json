@@ -1,5 +1,7 @@
 [
   {
+    "comment1": "这是注释",
+    "comment2": "格式化网络:https://c.runoob.com/front-end/53",
     "title1": "基础类使用",
     "data1": [
       {
@@ -11,14 +13,46 @@
               "计算单行字符串宽高",
               "计算多行字符串宽高",
               "NSMutableAttributedString的基本使用",
-              "NSAttributedString设置行间距、段间距"
+              "NSAttributedString设置行间距、段间距",
+              "移除字符串中的特定字符",
+              "查的字符"
             ]
           }
         ]
       },
       {
         "title2": "NSUserDefaults",
-        "data2": []
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "NSUserDefaults存",
+              "NSUserDefaults取"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "UIFont",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "几种字体对比"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "Pasteboard",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "复制至系统粘贴板"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -26,8 +60,320 @@
     "title1": "UI使用",
     "data1": [
       {
-        "title2": "UITextView串",
-        "data2": []
+        "title2": "UITextViewDemo",
+        "data2": [
+          {
+            "title3": "TextView",
+            "data3": [
+              "UITextView添加链接",
+              "TextView限制字数(通知实现)"
+            ]
+          },
+          {
+                     "title3": "UITextField",
+                     "data3": [
+                       "基本使用"
+                     ]
+                   }
+        ]
+      },
+      {
+        "title2": "Xib使用",
+        "data2": [
+          {
+            "title3": "Xib基本使用",
+            "data3": [
+              "从xib读取view",
+              "通过Xib加载控制器的View"
+            ]
+          },
+          {
+              "title3": "SB基本使用",
+              "data3": [
+                "通过StoryBoard加载控制器"
+              ]
+          }
+        ]
+      },
+      {
+        "title2": "UIView使用",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "自定义View",
+              "倒计时",
+              "非button添加点击事件",
+              "设置圆角",
+              "测试subviews属性是否包含子view的子view",
+              "判断一个view是否在别一个view中(含子view的子view)",
+              "UIBezierPath画圆角"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "UITableView使用",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "基本使用",
+              "多组tableview",
+              "uitableview的section不置顶的方法",
+              "tableView全局设置",
+              "cell复用",
+              "全局刷新",
+              "局部刷新",
+              "左滑删除",
+              "左滑多个按钮",
+              "编辑模式",
+              "批量删除",
+              "自定义批量删除"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "Autolayout",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "约束修改(Masonry)",
+              "约束修改(原生)"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "UIImageView",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "不同模式显示",
+              "播放帧动画"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "UILabel",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "不同换行模式",
+              "不同对齐模式"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "UIBezierPath",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "基本使用"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "ViewController",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "生命周期",
+              "触摸事件",
+              "loadView的使用"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "Button",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "基本使用",
+              "自定义Button",
+              "显示拉伸图片"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "ScrollView",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "基本使用",
+              "contentOffset",
+              "scrollview的代理方法",
+              "缩放",
+              "分页",
+              "显示分页位置",
+              "分页自动换页"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "PickView",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "基本使用"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "文件读写",
+    "data1": [
+      {
+        "title2": "NSBundle",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "读取plist文件"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "多媒体",
+    "data1": [
+      {
+        "title2": "AVPlayer",
+        "data2": [
+          {
+            "title3": "基本使用",
+            "data3": [
+              "播放音频"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "代码设计",
+    "data1": [
+      {
+        "title2": "代码设计",
+        "data2": [
+          {
+            "title3": "常见使用",
+            "data3": [
+              "懒加载",
+              "单例"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "动画",
+    "data1": [
+      {
+        "title2": "基础动画",
+        "data2": [
+          {
+            "title3": "常见使用",
+            "data3": [
+              "渐变"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "OC",
+    "data1": [
+      {
+        "title2": "runtime",
+        "data2": [
+          {
+            "title3": "基础应用",
+            "data3": [
+              "KVC",
+              "KVO"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "System",
+    "data1": [
+      {
+        "title2": "Notification",
+        "data2": [
+          {
+            "title3": "基础应用",
+            "data3": [
+              "通知的基本应用",
+              "UIDevice",
+              "键盘"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "Application",
+        "data2": [
+          {
+            "title3": "基础应用",
+            "data3": [
+              "Application基本应用",
+              "管理状态栏",
+              "openURL"
+            ]
+          }
+        ]
+      },
+      {
+        "title2": "UIWindow",
+        "data2": [
+          {
+            "title3": "基础应用",
+            "data3": [
+              "UIWindow基本应用"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title1": "自定义视图",
+    "data1": [
+      {
+        "title2": "简单自定义视图",
+        "data2": [
+          {
+            "title3": "简单自定义视频",
+            "data3": [
+              "KVO"
+            ]
+          }
+        ]
       }
     ]
   }

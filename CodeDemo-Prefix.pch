@@ -10,8 +10,16 @@
 #define CodeDemo_Prefix_pch
 
 #import "UIWindow+ShareTestView.h"
+#import <Masonry.h>
 
 #define SCREEN_WIDTH    [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT   [[UIScreen mainScreen] bounds].size.height
+
+#ifdef DEBUG
+#define Log(...) NSLog(__VA_ARGS__)
+#else
+#define Log(...)
+#endif
+
 
 #endif /* CodeDemo_Prefix_pch */

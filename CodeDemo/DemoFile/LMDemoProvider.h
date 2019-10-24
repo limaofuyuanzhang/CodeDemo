@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LMDemoProvider : NSObject
 + (void)runDemoWithOuterIndexPath:(NSIndexPath *)outerIndexPath
-                   innerIndexPath:(NSIndexPath *)innerIndexPath;
+                   innerIndexPath:(NSIndexPath *)innerIndexPath
+                    viewController:(UIViewController *)vc;
 @end
 
 NS_ASSUME_NONNULL_END

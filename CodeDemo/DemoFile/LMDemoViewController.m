@@ -1,12 +1,12 @@
 //
-//  LMStringDemoViewController.m
+//  LMDemoViewController.m
 //  CodeDemo
 //
 //  Created by 林涛 on 2019/9/24.
 //  Copyright © 2019 狸猫工作室. All rights reserved.
 //
 
-#import "LMStringDemoViewController.h"
+#import "LMDemoViewController.h"
 #import <Masonry.h>
 
 @interface LMDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -62,6 +62,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (self.didSelectBlock) {
         self.didSelectBlock(indexPath);
     }

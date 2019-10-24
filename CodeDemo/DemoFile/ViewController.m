@@ -72,12 +72,13 @@
 
 //indexPath中，section:一级目录，row:二级目录
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     LMDemoViewController *vc = [[LMDemoViewController alloc] init];
     vc.dataArray = [LMMenuProvider readThirdMenu:indexPath];
     vc.title = self.titleArray[indexPath.section][@"data1"][indexPath.row][@"title2"];
     vc.didSelectBlock = ^(NSIndexPath * _Nonnull innerIndexPath) {
         //indexPath中，section:三级目录,row:具体事例
-        [LMDemoProvider runDemoWithOuterIndexPath:indexPath innerIndexPath:innerIndexPath];
+        [LMDemoProvider runDemoWithOuterIndexPath:indexPath innerIndexPath:innerIndexPath viewController:self];
     };
     [self.navigationController pushViewController:vc animated:YES];
 }
